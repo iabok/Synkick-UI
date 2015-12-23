@@ -1,0 +1,432 @@
+@import "less/bootstrap.less";
+
+//Variables
+//Basic Colors
+@white-color : 			#FFFFFF;
+@black-color: 			#000000;
+@color-defualt: #333333;
+
+//Font Styling & Sizing
+@font-stack : 			'Open Sans', Tahoma, Arial;
+
+@font-size-base:        16px;
+@font-size-large:       ceil((@font-size-base * 1.25)); // ~18px (if font base is 14px)
+@font-size-xlarge:      ceil((@font-size-base * 1.79)); // ~25px (if font base is 14px)
+@font-size-small: 		ceil((@font-size-base * 0.85)); // ~12px (if font base is 14px)
+
+@weight-light: 			300;
+@weight-normal: 		400;
+@weight-semibold: 		600;
+@weight-bold: 			700;
+
+@font-size-h1:          floor((@font-size-base * 2.6)); // ~36px (if font base is 14px)
+@font-size-h2:          floor((@font-size-base * 2.15)); // ~30px (if font base is 14px)
+@font-size-h3:          ceil((@font-size-base * 1.7)); // ~24px (if font base is 14px)
+@font-size-h4:          ceil((@font-size-base * 1.25)); // ~18px (if font base is 14px)
+@font-size-h5:          @font-size-base;
+@font-size-h6:          ceil((@font-size-base * 0.85)); // ~12px (if font base is 14px)
+
+@left: left;
+@right: right;
+
+body{
+	font-family: @font-stack;
+	font-size: @font-size-base;
+	font-weight: @weight-normal;
+}
+
+.navbar{
+	background-color: @white-color;
+	border: none;
+	margin-bottom: -80px;
+	margin-top:20px;
+}
+
+.logo {
+    max-height: 50px!important;
+    margin-top: -10px;
+}
+
+.synkick_header{
+	background-color: @white-color;
+	color: @color-defualt;
+	margin: auto 0 auto 0;
+}
+.synkick__container{
+	max-width: 1600px;
+	width: calc(100% - 16px);
+	margin: 0 auto;
+}
+
+.form-control::-webkit-input-placeholder { color: #f05322; }
+.form-control:-moz-placeholder { color: #f05322; }
+.form-control::-moz-placeholder { color: #f05322; }
+.form-control:-ms-input-placeholder { color: #f05322; }
+
+
+#search-form{
+	border-color: #f05322;
+    border-width: 2px;
+    margin-left: 10px;
+}
+
+#synkikc-search{
+	color: #F4520C;
+	font-size: 22px;
+	position: relative;
+	top: 8px;
+}
+
+#synkick-dashboard-color{
+	color: #F4520C;
+}
+
+#synkick_image_overlay {
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
+    background-attachment: fixed;
+    height: 650px;
+}
+
+.synkick_space_row{
+	margin-bottom:20px;
+}
+
+.synkick-bg-image {
+	background-image: url('../images/synkick1.jpg');
+	background-color: #212121 !important;
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+	height:650px;
+	.synkick_content{
+		text-align: center;
+		position: relative;
+		top:150px;
+		h1 {
+			text-align: center;
+			color: @white-color;
+			margin-top: 100px;
+			font-weight:@weight-normal;
+			font-size: 72px;
+		}
+		.synkick_sub-header{
+			color: @white-color;
+			font-size: 20px;
+			margin-left: -20px;
+			position: relative;
+			top: 20px;
+		}
+
+		.synkick_span_header_1 {
+			float: right;
+			text-align:left;
+			text-indent:0px;
+			font-weight: 300;
+			font-size: @font-size-h1;
+		}
+
+		.synkick_span_header{
+			font-size: 26px;
+			font-weight: 500;
+			text-align: left;
+			text-indent: 0px;
+			float: left;
+		}
+	}
+}
+
+.page-content{
+	margin-top: 60px;
+	.synkick_header_1{
+		margin-left: 100px;
+		color:darken(#B9B7B7, 35%);
+		font-family: @font-stack;
+		font-size: @font-size-h4;
+		font-weight: 100;
+		line-height: 26.4px;
+	}
+
+	.synkick_sub_header_1{
+		.synkick_header_1;
+		font-weight: @weight-normal;
+	}
+
+	.synkick_row_hover{
+		margin-bottom: 20px;
+		&:hover{
+			background:#EAEAEA;
+			color:#ffffff;
+			cursor: pointer;
+		}
+	}
+
+	.synkick_profile_image {
+		//background: #000000;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+	}
+
+	.synkick_border{
+		border-bottom: 1px solid #EAEAEA;
+		position: relative;
+		left: 35px;
+		margin-bottom: 30px;
+		@media screen and (max-width: 768px) {
+			position: relative;
+			left: -20px;
+		}
+	}
+
+	.synkick_header_taste{
+		.synkick_header_1;
+		position: relative;
+		top:50px;
+		font-size: @font-size-h4;
+		font-weight: @weight-normal;
+	}
+
+	.synkick_download_app{
+		margin-top: 80px;
+		margin-bottom: 40px;
+		.mdl-button--synckick{
+			background-color: #F4520C;
+			text-align: center;
+			color: @white-color;
+			@media screen and (min-width: 1600px) and (max-width: 1920px) {
+				margin-left: -50px;
+				padding:20px;
+				width:100%;
+				font-size: @font-size-h4;
+			}
+		}
+
+		.synkick_download_text{
+			@media screen and (min-width: 1600px) and (max-width: 1920px) {
+				position: relative;
+				top: 0px;
+			}
+		}
+	}
+
+	.synkick_upcoming_header{
+		h1 {
+			.synkick_header_1;
+		    overflow: hidden;
+		    text-align: center;
+		    position: relative;
+		    left: -60px;
+		    @media screen and (min-width: 1600px) and (max-width: 1920px) {
+		    	font-size: @font-size-h4;
+				position: relative;
+				left:50px;
+			}
+		}
+		h1:before,
+		h1:after {
+		    background-color: #EAEAEA;
+		    content: "";
+		    display: inline-block;
+		    height: 1px;
+		    position: relative;
+		    vertical-align: middle;
+		    width: 50%;
+		}
+		h1:before {
+		    right: 0.5em;
+		    margin-left: -68%;
+		}
+		h1:after {
+		    left: 0.5em;
+		    margin-right: -50%;
+		}
+	}
+
+	.synkick_album_art{
+		.synkick_profile_image;
+		background: none;
+		float:right;
+		width: 100px;
+		height: 100px;
+	}
+	.synkick_art{
+		border-radius: 50%;
+		width: 100px;
+		height: 100px
+	}
+
+	#synkick_icon_favorite{
+		font-size: @font-size-h5;
+		margin-top: 50px;
+		color: #D7D7D7;
+	}
+	.synkick_song_title_colum{
+		position: relative;
+		left: 20px;
+		.synkick_song_title{
+			h2 {
+				margin-top:20px;
+				font-size: @font-size-h5;
+				font-weight:600;
+				color:darken(#B9B7B7, 35%);
+				
+			}
+		}
+
+		.synkick_artist_name {
+			h2 {
+				.synkick_song_title;
+				font-size: @font-size-h5;
+				font-weight: 500;
+				margin-top: 0px;
+				color:darken(#B9B7B7, 35%);
+			}
+			
+		}
+	}
+		
+
+}
+
+footer{
+	margin-top:50px;
+	min-height:250px;
+}
+
+//Responsive
+ 
+/* mobile-small */
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) { }
+/* mobile-large */
+@media all and (min-width: 361px) and (orientation: portrait) { }
+/* mobile-small-landscape */
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+/* mobile-large-landscape */
+@media all and (min-width: 481px) and (orientation: landscape) { }
+/* tablet-small-landscape */
+@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) { }
+/* tablet-large-landscape */
+@media all and (min-width: 961px) and (orientation: landscape) { }
+/* tablet-small */
+@media all and (min-width: 600px) and (orientation: portrait) { }
+/* tablet-large */
+@media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) { }
+/* desktop-x-small-landscape */
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+/* desktop-x-small */
+@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) { }
+/* desktop-small-landscape */
+@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) { }
+/* desktop-small */
+@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) { }
+/* desktop-medium-landscape */
+@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) { }
+/* desktop-medium */
+@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) { }
+/* desktop-large */
+@media all and (min-width: 1281px) and (max-width: 1600px) {
+	.synkick_profile_image{
+		position: relative;
+		left: 10px;
+	}
+	.synkick_header_1 {
+		width: 100%;
+		font-size: @font-size-h2;
+		position: relative;
+		left: 30px;
+	}
+	.synkick_sub_header_1{
+		.synkick_header_1;
+		position: relative;
+		left: 50px;
+	}
+
+	.synkick_header_taste{
+		.synkick_sub_header_1
+	}
+
+	.synkick_download_text{	 
+		position: relative;
+		top: 0px;	 
+	}
+
+	.synkick_download_app{
+	}
+ }
+/* desktop-xlarge */
+@media all and (min-width: 1601px) and (max-width: 1920px) { 
+	.synkick_profile_image{
+		position: relative;
+		left: -5px;
+	}
+	.synkick_header_1 {
+		font-size: @font-size-h2;
+		position: relative;
+		left: 30px;
+	}
+	.synkick_sub_header_1{
+		.synkick_header_1;
+		position: relative;
+		left: 100px;
+	}
+
+	.synkick_header_taste{
+		.synkick_sub_header_1
+	}
+
+	.synkick_download_text{	 
+		position: relative;
+		top: 0px;	 
+	}
+
+	.synkick_download_app{
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.synkick_border{
+		position: relative;
+		left: -20px;
+	}
+}
+
+@media screen and (max-width: 1360px) {
+	.synkick_profile_image{
+		position: relative;
+		left: -20px;
+	}
+	.synkick_header_1 {
+		width: 100%;
+		font-size: @font-size-h2;
+		position: relative;
+		left: -30px;
+	}
+	.synkick_sub_header_1{
+		.synkick_header_1;
+		position: relative;
+		left: -25px;
+	}
+
+	.synkick_header_taste{
+		.synkick_sub_header_1
+	}
+
+	.synkick_download_text{	 
+		position: relative;
+		top: 0px;	 
+	}
+
+	.synkick_download_app{
+		position: relative;
+		left: -45px;
+	}
+}

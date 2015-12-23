@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Synkick">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Synkick</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Synkick">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:light,normal,bold,italic" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="stylesheets/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><span class="synkick-title"><img src="images/logo.png" class="logo"></span></a>
+            </div>
+            <div class="col-md-offset-4 col-lg-offset-4">
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <span id="synkikc-search" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <input type="text" id="search-form" class="form-control" placeholder="Search">
+                </div>
+              </form>
+            </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i id="synkick-dashboard-color" class="glyphicon glyphicon-align-justify"></i></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="synkick-bg-image">
+        <div id="synkick_image_overlay">
+            <div class="synkick__container">
+                <div class="synkick_content">
+                    <h1>De Beurs Utrecht</h1>
+                    <span class="synkick_sub-header">www.desbeursutrecht.nl</span> 
+                    <div class="col-md-offset-4 col-lg-offset-4" style="margin-top:50px;">
+                        <div class="row col-md-12"> 
+                            <div class="col col-md-4">
+                               <div class="synkick_span_header"><i class="glyphicon glyphicon-user"></i>&nbsp;Average age</div> 
+                            </div>
+                            <div class="col col-md-1">
+                                <div class="synkick_span_header_1">26</div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="col col-md-4">
+                                <div class="synkick_span_header"><i class="glyphicon glyphicon-user"></i>&nbsp;Guest</div>
+                            </div>
+                            <div class="col col-md-1">
+                                <div class="synkick_span_header_1">4</div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container page-content synkick__container">
+        <div class="row col-xs-offset-4 col-sm-offset-4 col-md-offset-5 col-lg-offset-5 synkick_space_row">
+          <div class="col col-md-4 col-lg-4">
+            <div class="synkick_profile_image">
+              <img src="images/art-4.jpg" class="synkick_profile_image">
+            </div>
+          </div>
+        </div>
+        <div class="row col-xs-offset-2 col-sm-offset-3 col-md-offset-4 col-lg-offset-4 synkick_space_row">
+          <div class="col col-sm-4 col-md-4 col-lg-4">
+            <h1 class="synkick_header_1">Now Playing</h1>
+            <div class="synkick_border"></div>
+          </div>
+        </div>
+         <div class="row col-md-offset-3 col-lg-offset-3 synkick_space_row">
+          <div class="col col-md-12 col-lg-12">
+            <span class="synkick_sub_header_1">Marvin Gaye- What's going on</span>
+          </div>
+        </div>
+
+       <div class="row col-md-offset-2 col-lg-offset-2 synkick_space_row">
+          <div class="col col-md-12 col-lg-12">
+            <span class="synkick_header_taste">Want to find bars around you based on your music taste?</span>
+          </div>
+        </div>
+        <div class="row col-xs-offset-3 col-sm-offset-4 col-md-offset-5 col-lg-offset-5 synkick_download_app">
+          <div class="col col-md-4 col-lg-4">
+            <!-- Accent-colored raised button -->
+            <button class="btn btn-warning btn-lg mdl-button--synckick">
+              <span class="synkick_download_text">Download the App</span>
+            </button>
+          </div>
+        </div>
+        <!-- Upcoming Tracks-->
+        <div class="row synkick_space_row">
+          <div class="col col-md-12 col-lg-12">
+            <div class="synkick_upcoming_header">
+                <h1>Upcoming tracks</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- First Row -->
+        <div class="row synkick_space_row synkick_row_hover">
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+             <div class="synkick_album_art">
+               <img src="images/art-1.jpg" class="synkick_art">
+             </div>
+          </div>
+          <div class="col col-xs-8 col-sm-8 col-md-8 synkick_song_title_colum">
+            <div class="synkick_song_title">
+                <h2>The Lift</h2>
+            </div>
+            <div class="synkick_artist_name">
+                <h2>Cut Chemist</h2>
+            </div>
+          </div>
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+            <i id="synkick_icon_favorite" class="glyphicon glyphicon-heart"></i>
+          </div>
+        </div>
+
+         <!-- second Row -->
+        <div class="row synkick_space_row synkick_row_hover">
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+             <div class="synkick_album_art">
+               <img src="images/art-2.jpg" class="synkick_art">
+             </div>
+          </div>
+          <div class="col col-xs-8 col-sm-8 col-md-8 synkick_song_title_colum">
+            <div class="synkick_song_title">
+                <h2>The Number Song</h2>
+            </div>
+            <div class="synkick_artist_name">
+                <h2>Dj Shadow</h2>
+            </div>
+          </div>
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+            <i id="synkick_icon_favorite" class="glyphicon glyphicon-heart"></i>
+          </div>
+        </div>
+
+         <!-- Third Row -->
+        <div class="row synkick_space_row synkick_row_hover">
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+             <div class="synkick_album_art">
+               <img src="images/art-3.jpg" class="synkick_art">
+             </div>
+          </div>
+          <div class="col col-xs-8 col-sm-8 col-md-8 synkick_song_title_colum">
+            <div class="synkick_song_title">
+                <h2>Dungoen Sound</h2>
+            </div>
+            <div class="synkick_artist_name">
+                <h2>Gramatik</h2>
+            </div>
+          </div>
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+            <i id="synkick_icon_favorite" class="glyphicon glyphicon-heart"></i>
+          </div>
+        </div>
+
+         <!-- Four Row -->
+        <div class="row synkick_space_row synkick_row_hover">
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+             <div class="synkick_album_art">
+               <img src="images/art-4.jpg" class="synkick_art">
+             </div>
+          </div>
+          <div class="col col-xs-8 col-sm-8 col-md-8 synkick_song_title_colum">
+            <div class="synkick_song_title">
+                <h2>La Tete dans etolies</h2>
+            </div>
+            <div class="synkick_artist_name">
+                <h2>Doctor Flake</h2>
+            </div>
+          </div>
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+            <i id="synkick_icon_favorite" class="glyphicon glyphicon-heart"></i>
+          </div>
+        </div>
+
+         <!-- Fifth Row -->
+        <div class="row synkick_space_row synkick_row_hover">
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+             <div class="synkick_album_art">
+               <img src="images/art-5.jpg" class="synkick_art">
+             </div>
+          </div>
+          <div class="col col-xs-8 col-sm-8 col-md-8 synkick_song_title_colum">
+            <div class="synkick_song_title">
+                <h2>The Lift</h2>
+            </div>
+            <div class="synkick_artist_name">
+                <h2>Cut Chemist</h2>
+            </div>
+          </div>
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+            <i id="synkick_icon_favorite" class="glyphicon glyphicon-heart"></i>
+          </div>
+        </div>
+
+         <!-- sixth Row -->
+        <div class="row synkick_space_row synkick_row_hover">
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+             <div class="synkick_album_art">
+               <img src="images/art-2.jpg" class="synkick_art">
+             </div>
+          </div>
+          <div class="col col-xs-8 col-sm-8 col-md-8 synkick_song_title_colum">
+            <div class="synkick_song_title">
+                <h2>Dungoen Sound</h2>
+            </div>
+            <div class="synkick_artist_name">
+                <h2>Doctor Flake</h2>
+            </div>
+          </div>
+          <div class="col col-xs-2 col-sm-2 col-md-2">
+            <i id="synkick_icon_favorite" class="glyphicon glyphicon-heart"></i>
+          </div>
+        </div>
+    </div>
+    <footer style="background: #424242">
+        <div class="synkick__container">
+          <span style="position:relative; top:100px; color:#ffffff; font-size:26px;"><center>Synkick &copy 2015</center></span>
+        </div>
+    </footer>
+  </body>
+  </html>
